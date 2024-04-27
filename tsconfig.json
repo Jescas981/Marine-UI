@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "react",
+    "module": "ESNext",
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "noEmit": true
+  }
+}
