@@ -8,7 +8,7 @@ const App: React.FC<React.PropsWithChildren> = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-        // setHead((s) => s + Math.PI * 0.2);
+        setHead((s) => s + Math.PI * 0.5);
     }, 1000);
 
     return () => {
@@ -94,9 +94,9 @@ const App: React.FC<React.PropsWithChildren> = () => {
       <div className="mx-auto rounded-md shadow-md bg-gray-100 p-4 w-72">
         <h1 className="font-bold">Coordinates</h1>
         <p>Orientation: {Math.round((head * 180) / Math.PI)}° West</p>
-        <p>Longitude: -75.015152</p>
-        <p>Latitude: -9.189967</p>
-        <p>Velocity: 10.0512 m/s</p>
+        <p>Longitude: {-75.015152+3*Math.random()}</p>
+        <p>Latitude: {-9.1899673+3*Math.random()}</p>
+        <p>Velocity: {10.05123+3*Math.random()} m/s</p>
       </div>
     </div>
   );
